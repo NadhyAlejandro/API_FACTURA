@@ -49,8 +49,8 @@ public class FacturaService {
         reportParameters.put("fecha",Date.valueOf(factura.getFecha()));
 
         CustomerDTO cliente =  customerClient.findCustomerById(factura.getClienteId());
-        reportParameters.put("nombre_cliente", cliente.getRazon_social());
-        reportParameters.put("identificacion", cliente.getNro_identificacion());
+        reportParameters.put("nombre_cliente", cliente.getNombre());
+        reportParameters.put("identificacion", cliente.getCedula());
         
         List<Map<String, Object>> dataList = new ArrayList<>();
 

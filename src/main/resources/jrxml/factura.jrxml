@@ -24,7 +24,7 @@
 			</rectangle>
 			<staticText>
 				<reportElement x="170" y="27" width="190" height="30" forecolor="#FFFFFF" uuid="6f30a2ae-41c0-4b70-a432-45c4fb7d45fc"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle" markup="">
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[FACTURA]]></text>
@@ -80,7 +80,7 @@
 			<subreport>
 				<reportElement x="0" y="0" width="550" height="80" uuid="9671b46b-3fac-4b5e-82dd-958d58662268"/>
 				<dataSourceExpression><![CDATA[$P{lineasFactura}]]></dataSourceExpression>
-				<subreportExpression><![CDATA["classpath:jrxml/NombreSubReporte.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA["classpath:jrxml/detallefactura.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
 	</detail>
