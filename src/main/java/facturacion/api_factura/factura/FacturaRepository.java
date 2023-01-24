@@ -1,11 +1,8 @@
 package facturacion.api_factura.factura;
-
 import java.util.List;
+import org.springframework.data.repository.CrudRepository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+public interface FacturaRepository extends CrudRepository<Factura, Long>{
 
-public interface FacturaRepository extends JpaRepository<Factura, Long> {
-
-    public List<Factura> findAll();
-    
+    List<Factura> findAll();
 }
